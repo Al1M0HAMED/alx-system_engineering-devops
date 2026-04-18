@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# if and while for best school :).
+i=1
+while [[ $i -le 10 ]]; do
+	if [[ $i -eq 10 ]]; then
+		echo "hi"
+	fi
+	echo "Best School"
+    ((i++))
+done
