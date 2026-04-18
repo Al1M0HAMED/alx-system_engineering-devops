@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 # prints all file in list format without first dash int file name.
 for file in *; do
-    [[ "$file" == *-* ]] && echo "${file#*-}"
+    # skip hidden files (safety check)
+    [[ "$file" == .* ]] && continue
+
+    # print part after first dash, or full name if no dash
+    if [[ "$file" == *-* ]]; then
+        echo "${file#*-}"
+    else
+        echo "$file"
+    fi
 done
