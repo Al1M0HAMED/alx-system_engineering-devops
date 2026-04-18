@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# prints all file in list format without first dash int file name.
+for file in *; do
+    [[ "$file" == *-* ]] && echo "${file#*-}"
+done
