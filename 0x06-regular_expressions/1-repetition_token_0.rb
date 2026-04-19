@@ -1,5 +1,2 @@
 #!/usr/bin/env ruby
-
-arg = ARGV[0]
-
-puts ARGV[0][[hb-t{2,5}-tn]]
+puts ARGV[0].scan(/hb-t{2,5}-tn/).join
