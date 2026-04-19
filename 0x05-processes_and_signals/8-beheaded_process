@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bash grep
+# shellcheck disable=SC200
+pgrep -f 7-highlander | xargs kill -9
